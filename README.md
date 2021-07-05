@@ -2,8 +2,8 @@
 
 <center>
 
-## Overview of Project: Explain the purpose of this analysis.
-
+## Overview of Project: Explain 
+ 
 </center>
 
 The purpose of this analysis is to analyse and compare the refactored code and original codeVBA, using VBA program, from a dataset of 3000 elements of the stock market in the US. The objective of the refactored code is to enhance and optimize computational performance in order to reduce times and to expand the dataset with more information. It is found that looping or making iterative processes unnecessary times can increase computational times enormously, thus the refactored code eradicates this problem by looping only one time and reducing computational time.
@@ -26,7 +26,7 @@ Before analyzing the original and refactored code it is important to show their 
 
 <center>
 
- <center> Pseudo Code (Original) <br> </center>| <center> Pseudo Code (Refactored) <br> </center>
+ Pseudo Code (Original)|Pseudo Code (Refactored)
  -----------------------|---------------------------
 1.Format the output sheet on the "All Stocks Analysis" worksheet.  | 1. Format the output sheet on the "All Stocks Analysis" worksheet.
 2.Initialize an array of all tickers.                              | 2. Initialize an array of all tickers.
@@ -52,7 +52,7 @@ Before analyzing the original and refactored code it is important to show their 
 Below the original code and the refactored code are shown. It can be seen that, with the purpose to reduce the computational time and resources occupied, the refactored code uses four arrays (tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices: as String type, Long type, Single type and Single type, respectively) which is not the case for the original code, since it has 1 array. Although it may seem that the latest script uses less memory, it is not true since within its body we can see that the ticker=tickers(i) variable is not specified, thus the computer uses every type of variable in order to avoid mistakes when running, therefore it can be concluded the following. Firstly, by creating 4 arrays, it reduces allocation memory as the type of the arrays are specified, so the computer does not need to use all type of arrays, only the ones used. For instance, declaring a 9 element, but not specified type of, array consumes 176 bytes in contrast to a 9 element, double type of, array which consumes 22 bytes. This shows clearly a reduction of memory, thus improving computational time. 
 
 
-<center> Original Code <br> </center>|<center> Refactored Code  <br> </center>
+Original Code|Refactored Code
 -------------|-----------------
 ![Original Code](./resources_challenge_2/VBA_ORIGINAL_CODE.png) | !["Refactored Code"](./resources_challenge_2/VBA_FASTER_CODE.png)
 
@@ -78,7 +78,7 @@ Computational Performance Original Code| Computational Performance Refactored Co
 ![Performance Original Code 2018](./resources_challenge_2/VBA_ORIGINAL_CODE_2018.png)| ![Performance Refactored Code 2018](./resources_challenge_2/VBA_Challenge_2018.png)
 </center>
 
-Although refactoring a code always makes a code more efficient, and it will make a code more readable and cleaner, usually it is much harder to make it possible, due to the fact that most codes are incredibly long. This, makes the task of refactoring a very complex practice, so it is important to analyze how much time, effort and if it is worth to change the original code. For instance, if a code runs good enough, but not as fast as it could be, but serves its purpose, it is not worth making a mayor change to make more efficient the code.
+Although refactoring a code always makes a code more efficient, and it will make a code more readable and cleaner, usually it is much harder to make it possible, due to the fact that most codes are incredibly long. This, makes the task of refactoring a very complex practice, so it is important to analyze how much time, effort and if it is worth to change the original code. For instance, if a code runs good enough, but not as fast as it could be, but serves its purpose, it is not worth making a mayor change to make more efficient the code. Finally, the output is shown below, it is the same for both codes, so the refactoring practice was more efficient
 
 <center>
 
@@ -88,7 +88,7 @@ Final Output For 2017|Final Output For 2018
 
 </center>
 
-## Summary: In a summary statement, address the following questions.
+## Summary: 
 What are the advantages or disadvantages of refactoring code?
 How do these pros and cons apply to refactoring the original VBA script?
 
